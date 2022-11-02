@@ -1,0 +1,102 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source_code: embed
+    theme: simplex
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+data("instacart")
+
+instacart = instacart %>% 
+  janitor::clean_names() 
+```
+
+Column {data-width=500} 
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r warning=FALSE}
+bar_chart = instacart %>% 
+  group_by(aisle) %>% 
+  summarize(n_obs = n()) %>% 
+  filter(n_obs > 10000) %>% 
+  mutate(aisle = fct_reorder(aisle, n_obs)) %>% 
+  ggplot(aes(x = n_obs, y = aisle, fill = aisle)) + 
+  geom_col(width = .5,
+           position = position_dodge(width = 1)) +
+  labs(title = "Number of items ordered in each aisle",
+       subtitle = "with aisles more than 10,000 ordered items",
+       x = "Number of items ordered",
+       y = "Category of aisle"
+       ) +
+  theme(plot.title = element_text(hjust = 0.5, size = 10))
+
+ggplotly(bar_chart)
+
+```
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r warning=FALSE}
+ instacart %>% 
+  filter(department == "bakery",
+         order_dow == "1") %>%
+  plot_ly(
+    x = ~aisle, y = ~order_hour_of_day, type = "box", mode = "markers",
+    color = ~aisle, alpha = .5
+  )
+```
+
+
+### Chart C
+
+```{r, warning=FALSE, message=FALSE}
+instacart = instacart %>% 
+  filter(department %in% c("bakery", "pets"))
+
+line_chart = instacart %>% 
+  filter(product_name %in% c("Organic Bread with 21 Whole Grains", "100% Whole Wheat Bread", "Original Nooks & Crannies English Muffins", "Sourdough Bread", "Corn Tortillas", "Plain Bagels", "Whole Wheat Bread")) %>%
+  group_by(product_name, order_dow) %>% 
+  summarize(n_obs = n()) %>% 
+  ggplot(aes(x = order_dow, y = n_obs, color = product_name)) +
+  geom_line() +
+  labs(title = "Sells of specific products by day",
+       x = "Day of week",
+       y = "Sells") +
+  scale_x_discrete(labels = c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")) +
+  theme(plot.title = element_text(hjust = 0.5, size = 10))
+  
+ggplotly(line_chart)
+```
+
+## Back
+<font size="4">Back to [home page](index.html)</font>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
