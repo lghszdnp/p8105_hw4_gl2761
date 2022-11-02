@@ -1,0 +1,134 @@
+---
+title: "Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: simplex
+---
+
+## Resume
+
+<font size="6"><b>Gonghao Liu</b></font>
+
+<font size="5"><b>Education</b></font>
+
+<font size="4"><b>Columbia University</b></font>
+
+<font size="3">M.S. in Biostatistics</font>
+
+<font size="3">New York, NY</font>
+
+<font size="3">Sep. 2021 - Jun. 2023</font>
+
+
+<font size="4"><b>The Pennsylvania State University</b></font>
+
+<font size="3">B.S. in Economics</font>
+
+<font size="3">Minor in Statistics</font>
+
+<font size="3">State College, PA</font>
+
+<font size="3">Jan. 2019 - May. 2021</font>
+
+
+
+<font size="5"><b>Relevant Experience</b></font>
+
+<font size="4"><b>Columbia University</b></font>
+
+<font size="3">Sep. 2021 - Present</font>
+
+<font size="3"><i>Research Assistant</i></font>
+
+<font size="3">New York, NY</font>
+
+<font size="3"><li>Reprogram 3 apps about visualization of Phase I and Phase II Clinical Trial data by using R Shiny, aim to upgrade the design, improve the friendly for publication, and offer more flexibility to the user;</li></font>
+
+<font size="3"><li>Developing 6 new Apps in the field of cancer clinical trial data visualization, and will be presented at Conference on Statistical Practice;</li></font>
+
+<font size="3"><li>Accelerated 20% loading speed of R Shiny App by improving code structure, package usage, and concise code;</li></font>
+
+<font size="3"><li>Collaborated with teammates to design and make a new template for all the App development, the templates have been successfully applied to 11 apps until today.</li></font>
+
+<font size="4"><b>Vision Medicals</b></font>
+
+<font size="3">Summer 2021</font>
+
+<font size="3"><i>Associate Research Intern</i></font>
+
+<font size="3">Beijing, China</font>
+
+<font size="3"><li>Analyzed data in Wind financial database, then generated industry and company reports, helped decision-makers determine the future direction of development, and leading to the series D funding by the end of the year 2021;</li></font>
+
+<font size="3"><li>Conducted research on the industry, analyzed collected market data from 5 leading companies during the period of the pandemic, and assisted the company in finding market entry points;</li></font>
+
+<font size="3"><li>Visualized data by using ggplot2 from R and gave presentations to colleagues to highlight the latest market situations
+</li></font>
+
+<font size="4"><b>Penn State University</b></font>
+
+<font size="3">May 2020 - Dec 2020</font>
+
+<font size="3"><i>Undergraduate Research Assistant</i></font>
+
+<font size="3">State College, PA</font>
+
+<font size="3"><li>Used R Shiny, HTML, and CSS to develop a new app about analysis of variance (ANOVA) which is used to teach statistical concepts in undergraduate and graduate courses;</li></font>
+
+<font size="3"><li>Gathered results from Penn State Statistics education experiments and update the functions and design in the existing code base of 3 existing apps, increased the mobile-friendly score from 1/5 to 4/5;</li></font>
+
+<font size="3"><li>Design UI and server logic with multiple packages from R</li></font>
+
+<font size="4"><b>Analysys Limited</b></font>
+
+<font size="3">July 2018 - Dec 2018</font>
+
+<font size="3"><i>Analyst Assistant Intern</i></font>
+
+<font size="3">Beijing, China</font>
+
+<font size="3"><li>Collected and analyzed application data with features such as customer flow, user loyalty, and user experience;</li></font>
+
+<font size="3"><li>Visualized data and generated data-based reports;</li></font>
+
+<font size="3"><li>Customized data reports and presented to application developing agencies to assist in business strategy consultation</li></font>
+
+<font size="5"><b>Projects</b></font>
+
+<font size="4"><b>Introduction to Random Clinical Trial Crouse Project</b></font>
+
+<font size="3">Jun. 2022 - May. 2022</font>
+
+<font size="3"><i>A Proposal for Phase III Clinical Trial Study Design</i></font>
+
+<font size="3">New York, NY</font>
+
+<font size="3"><li>Produced a protocol outline for a phase III two-parallel-group randomized clinical trial of colloidal silicon dioxide combined with rehydration therapy in patients with acute diarrhea; </li></font>
+
+<font size="3"><li>Designed and controlled the elements of the trial including randomization, blinding, active-control, multi-center, statistical considerations, and others;</li></font>
+
+<font size="3"><li>Calculate the power and sample size by using PASS.</li></font>
+
+<font size="4"><b>The Curiosity Cup</b></font>
+
+<font size="3">Dec. 2021 - Feb. 2022</font>
+
+<font size="3"><i>Team leader</i></font>
+
+<font size="3">New York, NY</font>
+
+<font size="3"><li>Coordinated communication between team members and ensure all the work are carried out efficiently;</li></font>
+
+<font size="3"><li>Used SAS to visualize the data and analysis the problem of how to distinguish malignant and benign breast cancer by image features;</li></font>
+
+<font size="3"><li>Fitted the data to artificial neural network model, then assessed models by using ROC and AUC.</li></font>
+
+<font size="5"><b>Skills</b></font>
+
+<font size="3">R, R Shiny, SAS (SAS Base Certification), SQL, STATA, Minitab, Microsoft Office, Google Suite, PASS, Python
+</font>
+
+## Back
+<font size="4">Back to [home page](index.html)</font>

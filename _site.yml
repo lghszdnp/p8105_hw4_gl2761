@@ -1,0 +1,20 @@
+name: "Yay internet!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "Resume"
+      href: resume.html
+    - text: "Dashboard"
+      href: dashboard.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<gl2761@cumc.columbia.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/lghszdnp/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/gonghao-liu-604006214/
+    - icon: fa-phone fa-lg 
+      href: tel:"571-267-8302"
+      
+output:
+  html_document

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Resume</title>
+
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="about.html">About</a>
+</li>
+<li>
+  <a href="mailto:&lt;you@youremail.com&gt;">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/&lt;YOUR_GH_NAME&gt;/">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Resume</h1>
+
+</div>
+
+
+<div id="resume" class="section level2">
+<h2>Resume</h2>
+<p><font size="6"><b>Gonghao Liu</b></font></p>
+<p><font size="5"><b>Education</b></font></p>
+<p><font size="4"><b>Columbia University</b></font></p>
+<p><font size="3">M.S. in Biostatistics</font></p>
+<p><font size="3">New York, NY</font></p>
+<p><font size="3">Sep. 2021 - Jun. 2023</font></p>
+<p><font size="4"><b>The Pennsylvania State University</b></font></p>
+<p><font size="3">B.S. in Economics</font></p>
+<p><font size="3">Minor in Statistics</font></p>
+<p><font size="3">State College, PA</font></p>
+<p><font size="3">Jan. 2019 - May. 2021</font></p>
+<p><font size="5"><b>Relevant Experience</b></font></p>
+<p><font size="4"><b>Columbia University</b></font></p>
+<p><font size="3">Sep. 2021 - Present</font></p>
+<p><font size="3"><i>Research Assistant</i></font></p>
+<p><font size="3">New York, NY</font></p>
+<font size="3">
+<li>
+Reprogram 3 apps about visualization of Phase I and Phase II Clinical Trial data by using R Shiny, aim to upgrade the design, improve the friendly for publication, and offer more flexibility to the user;
+</li>
+<p></font></p>
+<font size="3">
+<li>
+Developing 6 new Apps in the field of cancer clinical trial data visualization, and will be presented at Conference on Statistical Practice;
+</li>
+<p></font></p>
+<font size="3">
+<li>
+Accelerated 20% loading speed of R Shiny App by improving code structure, package usage, and concise code;
+</li>
+<p></font></p>
+<font size="3">
+<li>
+Collaborated with teammates to design and make a new template for all the App development, the templates have been successfully applied to 11 apps until today.
+</li>
+<p></font></p>
+<p><font size="4"><b>Vision Medicals</b></font></p>
+<p><font size="3">Summer 2021</font></p>
+<p><font size="3"><i>Associate Research Intern</i></font></p>
+<p><font size="3">Beijing, China</font></p>
+<font size="3">
+<li>
+Analyzed data in Wind financial database, then generated industry and company reports, helped decision-makers determine the future direction of development, and leading to the series D funding by the end of the year 2021;
+</li>
+<p></font></p>
+<font size="3">
+<li>
+Conducted research on the industry, analyzed collected market data from 5 leading companies during the period of the pandemic, and assisted the company in finding market entry points;
+</li>
+<p></font></p>
+<font size="3">
+<li>
+Visualized data by using ggplot2 from R and gave presentations to colleagues to highlight the latest market situations
+</li>
+<p></font></p>
+<p><font size="4"><b>Penn State University</b></font></p>
+<p><font size="3">May 2020 - Dec 2020</font></p>
+<p><font size="3"><i>Undergraduate Research Assistant</i></font></p>
+<p><font size="3">State College, PA</font></p>
+<font size="3">
+<li>
+Used R Shiny, HTML, and CSS to develop a new app about analysis of variance (ANOVA) which is used to teach statistical concepts in undergraduate and graduate courses;
+</li>
+<p></font></p>
+<font size="3">
+<li>
+Gathered results from Penn State Statistics education experiments and update the functions and design in the existing code base of 3 existing apps, increased the mobile-friendly score from 1/5 to 4/5;
+</li>
+<p></font></p>
+<font size="3">
+<li>
+Design UI and server logic with multiple packages from R
+</li>
+<p></font></p>
+<p><font size="4"><b>Analysys Limited</b></font></p>
+<p><font size="3">July 2018 - Dec 2018</font></p>
+<p><font size="3"><i>Analyst Assistant Intern</i></font></p>
+<p><font size="3">Beijing, China</font></p>
+<font size="3">
+<li>
+Collected and analyzed application data with features such as customer flow, user loyalty, and user experience;
+</li>
+<p></font></p>
+<font size="3">
+<li>
+Visualized data and generated data-based reports;
+</li>
+<p></font></p>
+<font size="3">
+<li>
+Customized data reports and presented to application developing agencies to assist in business strategy consultation
+</li>
+<p></font></p>
+<p><font size="5"><b>Projects</b></font></p>
+<p><font size="4"><b>Introduction to Random Clinical Trial Crouse Project</b></font></p>
+<p><font size="3">Jun. 2022 - May. 2022</font></p>
+<p><font size="3"><i>A Proposal for Phase III Clinical Trial Study Design</i></font></p>
+<p><font size="3">New York, NY</font></p>
+<font size="3">
+<li>
+Produced a protocol outline for a phase III two-parallel-group randomized clinical trial of colloidal silicon dioxide combined with rehydration therapy in patients with acute diarrhea;
+</li>
+<p></font></p>
+<font size="3">
+<li>
+Designed and controlled the elements of the trial including randomization, blinding, active-control, multi-center, statistical considerations, and others;
+</li>
+<p></font></p>
+<font size="3">
+<li>
+Calculate the power and sample size by using PASS.
+</li>
+<p></font></p>
+<p><font size="4"><b>The Curiosity Cup</b></font></p>
+<p><font size="3">Dec. 2021 - Feb. 2022</font></p>
+<p><font size="3"><i>Team leader</i></font></p>
+<p><font size="3">New York, NY</font></p>
+<font size="3">
+<li>
+Coordinated communication between team members and ensure all the work are carried out efficiently;
+</li>
+<p></font></p>
+<font size="3">
+<li>
+Used SAS to visualize the data and analysis the problem of how to distinguish malignant and benign breast cancer by image features;
+</li>
+<p></font></p>
+<font size="3">
+<li>
+Fitted the data to artificial neural network model, then assessed models by using ROC and AUC.
+</li>
+<p></font></p>
+<p><font size="5"><b>Skills</b></font></p>
+<p><font size="3">R, R Shiny, SAS (SAS Base Certification), SQL, STATA, Minitab, Microsoft Office, Google Suite, PASS, Python </font></p>
+</div>
+<div id="back" class="section level2">
+<h2>Back</h2>
+<p><font size="4">Back to <a href="index.html">home page</a></font></p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
